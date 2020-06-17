@@ -1,0 +1,172 @@
+/*-----------------------------------------------------------------------------------
+
+ Project Name: New Project
+ Project URI: http://
+ Description: 
+ Author: 
+ Author URI: 
+ Version: 1.0.0
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+
+ == Table Of Content
+
+ 00 Imports
+ 01 Basics
+ 
+
+---------------------------------------------------------------- */
+
+/* 00. Imports */
+@import 'variables',
+'mixins',
+'_reset',
+'_normalize',
+'_pages';
+
+
+/* Start Basics  */
+body {
+    color: $font_c;
+    font-weight: 300;
+  }
+  .wrapper {
+    position: relative;
+    top: 0;
+    height: 100vh;
+  }
+  
+  //side-bar
+  .sidebar {
+    .logo {
+      padding: 15px 0;
+      margin: 0;
+      display: block;
+      position: relative;
+      z-index: 4;
+    }
+  
+    .simple_text {
+      text-transform: uppercase;
+      padding: 5px 0;
+      display: inline-block;
+      font-size: 18px;
+      color: #3c4858;
+      font-weight: 400;
+      line-height: 30px;
+      overflow: hidden;
+      text-align: center;
+      display: block;
+    }
+  }
+  .sidebar .sidebar-wrapper {
+    position: relative;
+    height: calc(100vh - 75px);
+    width: 260px;
+    z-index: 4;
+    padding-bottom: 30px;
+  }
+  // cards
+  .card {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    background-color: $white;
+    width: 100%;
+    position: relative;
+    display: flex;
+    box-shadow: $bsb;
+    i {
+      font-size: 36px;
+      line-height: 56px;
+      width: 56px;
+      height: 56px;
+      text-align: center;
+    }
+  }
+  
+  //card-header
+  .card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: $layw0;
+    border-bottom: none;
+  }
+  .card-header-warning .card-icon {
+    background: $lgo;
+    box-shadow: $bso;
+  }
+  
+  .card-header-success {
+    .card-icon {
+      background: $lgg;
+      box-shadow: $bsg;
+    }
+  }
+  
+  .card-header-danger .card-icon {
+    background: $lgr;
+    box-shadow: $bsr;
+  }
+  .card-header-info .card-icon {
+    background: $lgb;
+    box-shadow: $bsb;
+  }
+  // card-footer
+  .card-footer {
+    padding: 0.75rem 1.25rem;
+    background-color: $layw0;
+    border-top: 1px solid $fas_color;
+  }
+  
+  // card icons
+  
+  .card-graph {
+    width: 300px;
+    height: 144;
+    color: $white;
+  }
+  
+  .card-icon {
+    li {
+      display: inline-block;
+      color: rgb(255, 255, 255);
+      list-style: none;
+      padding: 22px;
+    }
+  
+    .material-icons {
+      font-size: 36px;
+      line-height: 56px;
+      width: 56px;
+      height: 56px;
+      text-align: center;
+      color: $white;
+    }
+    border-radius: 3px;
+    background-color: #999;
+    padding: 15px;
+    margin-top: -25px;
+    margin-right: 15px;
+    float: left;
+  }
+  .stats .stats_color {
+    position: relative;
+    top: 3px;
+    font-size: 16px;
+    color: #999;
+  }
+  
+  //3rd row cards, 1st cards navbar
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  // card icons ends here
+  
+  //card graphs
+  
